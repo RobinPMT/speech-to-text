@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Speech to Text</title>
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <!-- <link href="../icons/16.png" rel="icon" type="image/ico" /> -->
+    <meta
+      content="initial-scale=1, minimum-scale=1, width=device-width"
+      name="viewport"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <div class="example">
+        <span>Example:</span>
+        <span class="final" id="example" contenteditable="fasle"
+          >Join Velas Incubator to connect with professional mentors, partners,
+          investors, and founders across the Velas ecosystem</span
+        >
+      </div> -->
+
+      <div class="results">
+        <span>Result: </span>
+        <span class="final" id="final" contenteditable="true"></span>
+        <span class="interim" id="interim"></span>
+      </div>
+      <!-- <div>
+        <table class="compare">
+          <tr>
+            <th>Example</th>
+            <th>Result</th>
+          </tr>
+          <tr>
+            <td>
+              Join Velas Incubator to connect with professional mentors,
+              partners, investors, and founders across the Velas ecosystem
+            </td>
+            <td id="final-compare"></td>
+          </tr>
+        </table>
+      </div> -->
+
+      <div class="console">
+        <pre id="info"></pre>
+      </div>
+    </div>
+    <div class="buttons">
+      <table>
+        <tr>
+          <td class="start">
+            <button id="start">
+              <img alt="start" id="talk" src="images/mic.png" />
+            </button>
+          </td>
+          <td class="settings">
+            <select id="language"></select>
+            <select id="dialect"></select>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!-- -->
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="resources/language.js"></script>
+  </body>
+</html>
